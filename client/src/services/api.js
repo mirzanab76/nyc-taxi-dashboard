@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://nyc-taxi-dashboard-15xqc0dg-mirzans-projects.vercel.app/api';
 
 const formatDateParam = (date) => {
   if (!date) return null;
