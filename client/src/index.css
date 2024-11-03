@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for map */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Custom styles for date range picker */
+.rdrCalendarWrapper {
+  width: 100% !important;
+  font-size: 14px !important;
+}
+
+.rdrMonth {
+  width: 100% !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.rdrDateRangePickerWrapper {
+  position: relative;
+  z-index: 50;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.rdrDefinedRangesWrapper {
+  display: none; 
+}
+
+.rdrCalendarWrapper {
+  background: white;
+  border-radius: 0.5rem;
+}
+
+.rdrDateDisplayWrapper {
+  background-color: transparent;
+}
+.date-picker-container {
+  position: relative;
+}
+
+.date-picker-popup {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1000;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-top: 0.5rem;
+}
+
+/* Ensure the calendar appears above the map */
+.leaflet-container {
+  z-index: 1;
+}
+
+.filters-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Make the date picker more compact */
+.rdrMonth {
+  padding: 0 0.5rem;
+}
+
+.rdrDateDisplayWrapper {
+  padding: 0.5rem;
+}
+
+/* Style the selected date range */
+.rdrDateInput {
+  padding: 0.25rem;
+  background: #f3f4f6;
+  border-radius: 0.25rem;
+}
+
+.rdrDateInput input {
+  font-size: 0.875rem;
+}
+
+/* Add some hover effects */
+.rdrDayToday .rdrDayNumber span:after {
+  background: #3b82f6;
+}
+
+.rdrDayHovered .rdrDayNumber span {
+  background: #eff6ff;
+}
+
+.rdrDayActive .rdrDayNumber span {
+  background: #3b82f6 !important;
+}
