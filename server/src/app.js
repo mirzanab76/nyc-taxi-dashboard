@@ -10,7 +10,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    "https://nyc-taxi-dashboard-15xqc0dg-mirzans-projects.vercel.app/api"
+    "https://nyc-taxi-dashboard-15xqec8dg-mirzans-projects.vercel.app"
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
